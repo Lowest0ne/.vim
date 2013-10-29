@@ -1,7 +1,10 @@
 execute pathogen#infect()
 
+
 " turn on syntax
+set t_md=
 syntax on
+colorscheme desert256
 " show line numbers
 set number
 " have indenting
