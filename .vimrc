@@ -4,7 +4,9 @@ execute pathogen#infect()
 " turn on syntax
 set t_md=
 syntax on
+" I use both these schemes, desert256 provides a nice base for grb256
 colorscheme desert256
+colorscheme grb256
 " show line numbers
 set number
 " have indenting
