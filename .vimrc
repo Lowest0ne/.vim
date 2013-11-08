@@ -33,3 +33,6 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 " insert single character with space
 nmap <Space> i_<Esc>r
+
+" ignore compiled objects
+set wildignore+=*.o
