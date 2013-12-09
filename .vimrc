@@ -4,9 +4,7 @@ execute pathogen#infect()
 " turn on syntax
 set t_md=
 syntax on
-" I use both these schemes, desert256 provides a nice base for grb256
-colorscheme desert256
-colorscheme grb256
+colorscheme my_colors
 " show line numbers
 set number
 " have indenting
@@ -19,7 +17,6 @@ set expandtab
 autocmd BufWritePre * :%s/\s\+$//e
 " color past 80 character
 let &colorcolumn=join( range( 81,999),",")
-highlight ColorColumn ctermbg=233
 " don't backup
 set nobackup
 set nowritebackup
