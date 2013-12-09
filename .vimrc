@@ -30,7 +30,10 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 " insert single character with space
 nmap <Space> i_<Esc>r
-
 " ignore compiled objects
 set wildignore+=*.o
 set wildignore+=*.os
+" tell me the highlight group
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
