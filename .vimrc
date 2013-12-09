@@ -36,3 +36,4 @@ nmap <Space> i_<Esc>r
 
 " ignore compiled objects
 set wildignore+=*.o
+set wildignore+=*.os
