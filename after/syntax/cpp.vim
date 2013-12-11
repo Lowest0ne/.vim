@@ -10,7 +10,7 @@ syn match   myDoxComment  "@\w\+"
 
 syn keyword myBoolean     true false
 syn match   myCharacter   "'.\{-1,2}'"
-syn match   myCommentSing "//.\+"
+syn match   myCommentSing "//.*"
 syn region  myCommentMult start="/\*" end="\*/" contains=myDoxComment
 syn keyword myConditional if else switch case for do while break continue
 syn match   myConditionDe "default:\@="
@@ -20,7 +20,7 @@ syn match   myFunction    "\w\+(\@="
 syn keyword myKeyWord     public private protected
 syn match   myNumber      "-\{,1}\d\+\.\{,1}"
 syn match   myNumberHex   "0x\x\+"
-syn match   myPreCondit   "#\(ifndef\|define\|endif\)\( [A-Z_]*\|\)"
+syn match   myPreCondit   "#\(else\|if\(n\|\)def\|define\|endif\)\( \w\+\|\)"
 syn match   myPreproc     "#include \(<\|\"\).\+\(>\|\"\)"
 syn keyword myStructure   enum union struct class namespace
 syn match   myString      "\".\+\""
