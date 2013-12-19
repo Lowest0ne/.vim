@@ -23,13 +23,13 @@ syn match   myNumberHex   "0x\x\+"
 syn match   myPreCondit   "#\(else\|if\(n\|\)def\|define\|endif\)\( \w\+\|\)"
 syn match   myPreproc     "#include \(<\|\"\).\+\(>\|\"\)"
 syn keyword myStructure   enum union struct class namespace
-syn match   myString      "\".\+\""
+syn region  myString      start="\"" end="\""
 syn keyword myTypePrim    signed unsigned void bool char short long int float double string
 syn keyword myTypeExtra   int8_t int16_t int32_t uint8_t uint16_t uint32_t
-syn keyword stlContainer  vector
-syn keyword myTypeName    typename auto const virtual
+syn keyword stlContainer  vector queue
+syn keyword myTypeName    typename auto const virtual static friend
 syn keyword myTypedef     typedef using
-syn keyword myStatement   return new delete template
+syn keyword myStatement   return new delete template this
 
 hi def link myDoxComment  SpecialComment
 hi def link myBoolean     Boolean
