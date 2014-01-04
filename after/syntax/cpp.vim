@@ -18,8 +18,8 @@ syn keyword myException   try catch throw noexcept
 syn match   myExceptionDe "default;\@="
 syn match   myFunction    "\w\+(\@="
 syn keyword myKeyWord     public private protected
-syn match   myNumber      "-\{,1}\d\+\.\{,1}"
 syn match   myNumberHex   "0x\x\+"
+syn match   myNumber      "\s\+\(-\{,1}\d\+\(\.\d\+\)\{,1}\)"
 syn match   myPreCondit   "#\(else\|if\(n\|\)def\|define\|endif\)\( \w\+\|\)"
 syn match   myPreproc     "#include \(<\|\"\).\+\(>\|\"\)"
 syn keyword myStructure   enum union struct class namespace
@@ -29,7 +29,7 @@ syn keyword myTypeExtra   int8_t int16_t int32_t uint8_t uint16_t uint32_t
 syn keyword stlContainer  vector queue
 syn keyword myTypeName    typename auto const virtual static friend
 syn keyword myTypedef     typedef using
-syn keyword myStatement   return new delete template this
+syn keyword myStatement   return new delete template this nullptr operator
 
 hi def link myDoxComment  SpecialComment
 hi def link myBoolean     Boolean
@@ -41,8 +41,8 @@ hi def link myException   Exception
 hi def link myExceptionDe Exception
 hi def link myFunction    Function
 hi def link myKeyWord     KeyWord
-hi def link myNumber      Number
 hi def link myNumberHex   Number
+hi def link myNumber      Number
 hi def link myPreCondit   PreCondit
 hi def link myPreProc     PreProc
 hi def link myStatement   Statement
