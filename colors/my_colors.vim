@@ -47,12 +47,12 @@ hi ColorColumn                ctermbg=233
 hi Comment        ctermfg=8   ctermbg=0
 hi Conceal        ctermfg=110 ctermbg=0
 hi Conditional    ctermfg=110 ctermbg=0
-hi Constant       ctermfg=110 ctermbg=0
+hi Constant       ctermfg=108 ctermbg=0
 hi CursorColumn   ctermfg=110 ctermbg=0
 hi CursorLine     ctermfg=110 ctermbg=0
 hi CursorLineNr   ctermfg=110 ctermbg=0
 hi Debug          ctermfg=110 ctermbg=0
-hi Define         ctermfg=110 ctermbg=0
+hi Define         ctermfg=104 ctermbg=0
 hi Delimiter      ctermfg=110 ctermbg=0
 hi DiffAdd        ctermfg=110 ctermbg=0
 hi DiffChange     ctermfg=110 ctermbg=0
@@ -102,7 +102,7 @@ hi Statement      ctermfg=222 ctermbg=0
 hi StatusLine     ctermfg=110 ctermbg=0
 hi StatusLineNC   ctermfg=110 ctermbg=0
 hi StorageClass   ctermfg=110 ctermbg=0
-hi String         ctermfg=110 ctermbg=0
+hi String         ctermfg=80  ctermbg=0
 hi Structure      ctermfg=206 ctermbg=0
 hi TabLine        ctermfg=110 ctermbg=0
 hi TabLineFill    ctermfg=110 ctermbg=0
