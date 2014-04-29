@@ -12,7 +12,6 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab
 " remove blankspace at end of line
 autocmd BufWritePre * :%s/\s\+$//e
 " color past 80 character
