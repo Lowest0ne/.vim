@@ -24,12 +24,12 @@ syn match   myPreCondit   "#\(else\|if\(n\|\)def\|define\|endif\)\( \w\+\|\)"
 syn match   myPreproc     "#include \(<\|\"\).\+\(>\|\"\)"
 syn keyword myStructure   enum union struct class namespace
 syn region  myString      start="\"" end="\""
-syn keyword myTypePrim    signed unsigned void bool char short long int float double string
+syn keyword myTypePrim    signed unsigned void bool char short long int float double string wstring
 syn keyword myTypeExtra   int8_t int16_t int32_t uint8_t uint16_t uint32_t size_t constexpr
 syn keyword stlContainer  vector queue
-syn keyword myTypeName    typename auto const virtual static friend
+syn keyword myTypeName    typename auto const virtual static friend override
 syn keyword myTypedef     typedef using
-syn keyword myStatement   return new delete template this nullptr operator
+syn keyword myStatement   return new delete template this nullptr operator explicit
 
 hi def link myDoxComment  SpecialComment
 hi def link myBoolean     Boolean
