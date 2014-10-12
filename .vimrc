@@ -1,6 +1,5 @@
 execute pathogen#infect()
 
-
 " turn on syntax
 set t_md=
 syntax on

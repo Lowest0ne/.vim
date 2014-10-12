@@ -41,6 +41,7 @@ highlight clear Normal
 " gives
 "	Cursor         xxx guifg=bg guibg=fg
 
+hi Normal         ctermfg=110 ctermbg=0
 hi Boolean        ctermfg=110 ctermbg=0
 hi Character      ctermfg=110 ctermbg=0
 hi ColorColumn                ctermbg=233
